@@ -1,1 +1,1 @@
-web: gunicorn prject2.wsgi --log-gile -
+web: gunicorn project2.wsgi --log-file -
