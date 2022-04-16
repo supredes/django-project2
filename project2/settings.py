@@ -15,9 +15,16 @@ import dj_database_url
 
 from pathlib import Path
 # Usando PostgreSQL com Heroku
+# DATABASES = {
+#     'default': dj_database_url.config()
+# }
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
