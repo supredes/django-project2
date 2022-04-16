@@ -10,7 +10,7 @@ mysql==0.0.3
 mysqlclient==2.1.0
 Pillow==9.0.1
 progressbar2==3.43.1
-psycopg2-binary==2.9.3
+psycopg2-binary==2.8.6
 PyMySQL==1.0.2
 python-utils==2.3.0
 pytz==2019.2
