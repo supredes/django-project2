@@ -1,14 +1,14 @@
 {% load bootstrap4 %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Produto</title>
     {% bootstrap_css %}
 </head>
 <body>
     <div class="container">
-        <h1>Product</h1>
+        <h1>Produto</h1>
         {% bootstrap_messages %}
         <form action="{% url 'product' %}" method="post" class="form" autocomplete="off" enctype="multipart/form-data">
             {% csrf_token %}
