@@ -49,4 +49,4 @@ def product(request):
         }
         return render(request, 'product.html', context)
     else:
-        return redirect('index')
+        return redirect('index.html')
