@@ -21,6 +21,7 @@ from pathlib import Path
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db-brothers'
     }
 }
 #BASE_DIR = Path(__file__).resolve().parent.parent
