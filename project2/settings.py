@@ -19,9 +19,7 @@ from pathlib import Path
     'default': dj_database_url.config()
 }"""
 DATABASES = {
-    'default': {
-        'ENGINE': 'dj_database_url.config()',
-    }
+    'default': dj_database_url.config()
 }
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
