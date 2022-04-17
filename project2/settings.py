@@ -13,15 +13,13 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 import dj_database_url
 
-from pathlib import Path
 # Usando PostgreSQL com Heroku
-"""DATABASES = {
-    'default': dj_database_url.config()
-}"""
+
 DATABASES = {
     'default': dj_database_url.config()
 }
-#BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -46,9 +44,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
-    'bootstrap4',
+
     'stdimage',
+    'bootstrap4',
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -137,8 +136,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Configurações de e-mail
 
