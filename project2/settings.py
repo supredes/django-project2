@@ -15,8 +15,18 @@ import dj_database_url
 
 from pathlib import Path
 # Usando PostgreSQL com Heroku
-DATABASES = {
+"""DATABASES = {
     'default': dj_database_url.config()
+}"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',		#--> Definimos aqui que utilizaremos o banco de dados mysql
+        'NAME': 'project2_django',			        #--> Nome do banco de dados
+        'USER': 'brothers',				            #--> Usuário
+        'PASSWORD': '253715',				        #--> Senha
+        'HOST': 'localhost',				        #--> Informamos que o srvidor do banco de dados estará na máquina local
+        'PORT': '3306', 				            #--> Porta de conexão que o MySQL utiliza por default
+    }
 }
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
