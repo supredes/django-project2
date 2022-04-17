@@ -20,7 +20,7 @@ from pathlib import Path
 }"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'dj_database_url.config()',
         'NAME': 'db-brothers'
     }
 }
