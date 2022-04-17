@@ -21,7 +21,6 @@ from pathlib import Path
 DATABASES = {
     'default': {
         'ENGINE': 'dj_database_url.config()',
-        'NAME': 'db-brothers'
     }
 }
 #BASE_DIR = Path(__file__).resolve().parent.parent
