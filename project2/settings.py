@@ -20,12 +20,8 @@ from pathlib import Path
 }"""
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',		#--> Definimos aqui que utilizaremos o banco de dados mysql
-        'NAME': 'project2_django',			        #--> Nome do banco de dados
-        'USER': 'brothers',				            #--> Usuário
-        'PASSWORD': '253715',				        #--> Senha
-        'HOST': 'localhost',				        #--> Informamos que o srvidor do banco de dados estará na máquina local
-        'PORT': '3306', 				            #--> Porta de conexão que o MySQL utiliza por default
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 #BASE_DIR = Path(__file__).resolve().parent.parent
